@@ -50,41 +50,70 @@
 										<p>Supervisors: Dr. Sharan Banagiri and Dr. Vicky Kalogera @ Northwestern CIERA</p>
 									</header>
 									
-									<h4>Abstract</h4>
-									
+									<h4>Overview</h4>
+										<p>Laser Interferometer Space Antenna (LISA) is a space-based telescope designed to study gravitational waves
+											in the millihertz frequency range<sup>1</sup>. In the this frequency band, the incoherent superposition of Double-White-Dwarfs (DWDs) results in a loud and detectable foreground, a type of the stochastic gravitational waves. Through the study of DWD spectrum, 
+											we can gain more insights into the population properties of the galactic DWDs and set tighter constraints
+											on galactic scale height. In this study, we use a non-parametric method to map
+											the power spectrum of the galactic DWD foreground. <br>
+											<!-- <span style="margin-left: 30px;">Autoregressive process is a stochastic, non-parametric model with the output variable depending
+												linearly on its own previous values and on a stochastic term (Callister & Farr (2023)). Autoregressive process allows
+												statistical inference without the assumption of a particular functional form. e incorporate the autoregressive model with Bayesian LISA Inference Pipeline (BLIP), a user friendly package that
+												designs to simulate LISA data, perform the spherical harmonic analysis on the simulated data, and conduct Bayesian
+												inference to recover the simulation (Banagiri et al. (2021))</span>
+												 -->
+											</p>
+											<p>
+
+											       Autoregressive process<sup>2</sup> is a 
+											non-parametric method, wherein the value of a function at a point stochastically depends on the value at previous points.  In particular, we use the first order autoregressive process which is continuous everywhere but not necessarily differentiable. 
+											We hierarchically infer the paramters of the autoregressive process model
+											and recover galactic DWD power spectrum using Bayesian inference pipeline for LISA,  BLIP<sup>3</sup>.
+											The autoregressive process is more flexible
+											than other hyper-parametric methods like a power law model, so we can recover other high frequency structure that depends on the detectability of LISA, galactic
+											structure, and intrinsic properties of DWDs such as chirp mass distributions. This non-parametric model is validated through a series of simulations and analyses,  
+											including the recovery of a power law spectrum and a more realistic spectrum using a galactic structure model and simulations of DWDs.
+											</p>
+							
+						
+											<div class="box">
+												<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="images/lisa.png" width=auto length="10" alt="" /></span></div>
 								
-									<p>
-									Stochastic gravitational wave confusion noise from galactic double white dwarfs (DWDs) could further
-									 our understanding of population properties of white dwarf binaries and help to constrain galactic
-									density scale height. In this study, we integrate the autoregressive process model to the bayesian inference to map
-									the power spectrum of the galactic DWD foreground. Autoregressive process is a 
-									non-parametric method, wherein the value of a function at a point stochastically depends on the value at previous points.  In particular, we use the first order autoregressive process which is continuous everywhere but not necessarily differentiable. 
-									We hierarchically infer the paramters of the autoregressive process model
-									and recover galactic DWD power spectrum using Bayesian inference pipeline for LISA (BLIP) with NESSAI sampler.
-									The autoregressive process is more flexible
-									than other hyper-parametric methods, so we can recover more features without too many assumptions in the prior
-									and the model. This non-parametric model is validated through a series of simulations and analyses,  
-									including the recovery of a power law spectrum and a more realistic spectrum using a galactic structure model and simulations of DWDs.
-									
+
+											<div class="col-6"><span class="image fit"><img src="images/test.png" width=auto length="10" alt="" /></span></div>
+							
+											</div>
+											<p style = "font-size:13px">The left figure<sup tyle = "font-size:13px"></sup> is a plot taken from the LISA L3 mission proposal showing the expected sensitivity (green line) 
+												and galactic background (gray area) in units of dimensionless characteristic strain.
+											        In the right figure,  the orange solid curve shows the power law injection; each light blue trace shows an individual draw from the
+												posterior; the dashed blue curve marks the median of the power spectrum; and dotted blue lines denote central 90% bounds on the power
+												spectral density at each frequency bin. The results indicate a qualitative recovery of the power spectrum’s overall shape.</p>
+											</div>					
 
 									
-									<div class="box alt">
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-6"><span class="image fit"><img src="images/AR_plot.png" alt="" /></span></div>
-											<div class="col-6"><span class="image fit"><img src="images/test.png" width=auto length="10" alt="" /></span></div>
-											
-									
-										</div>
-									</div>
-									<h4>Reference</h4>
+				
+
+									<h4>Acknowledgement</h4>
 									<ul>
-										<li style="font-size:12px"><a href="https://www.northwestern.edu/">Link to My Research Note </a></li>
-										<li style="font-size:12px"><a href="https://www.northwestern.edu/">Link to My Poster </a></li>
+										<!-- <li style="font-size:12px"><a href="https://www.northwestern.edu/">Link to My Research Note </a></li> -->
+										<!-- <li style="font-size:12px"><a href="https://www.northwestern.edu/">Link to My Poster </a></li> -->
 										
-										<li style="font-size:12px">This study is carried out at <a href="https://sites.northwestern.edu/cierareu/">CIERA REU</a> at Northwestern University, <br>
-											supported by Undergraduate Research Committee at Reed College under <a href="https://www.reed.edu/beyond-reed/fellowships-awards/sponsored/oppfellowship.html">SOFA.</a></li>
+										<li style="font-size:12px">This study is carried out at <a href="https://sites.northwestern.edu/cierareu/">CIERA REU</a> at Northwestern University. </li>
+											
+										<li style="font-size:12px"> GZ is supported by Undergraduate Research Committee at Reed College under <a href="https://www.reed.edu/beyond-reed/fellowships-awards/sponsored/oppfellowship.html">SOFA.</a></li></li>
 	
 									</ul>
+									<h4>References</h4>
+									<ol>
+										<li style="font-size:12px">Amaro-Seoane, P., Audley, H., Babak, S., et al. 2017, arXiv
+											preprint arXiv:1702.00786</li>
+										<li style="font-size:12px">Callister, T. A., & Farr, W. M. 2023, arXiv preprint
+											arXiv:2302.07289</li>
+										<li style="font-size:12px">Banagiri, S., Criswell, A., Kuan, T., et al. 2021, Monthly
+											Notices of the Royal Astronomical Society, 507, 5451</li>
+
+									</ol>
 
 									
 									
@@ -132,7 +161,11 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul>
+							<li>&copy; Guangyi Zhang</li>
+							<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							<li>Photo by <a href="https://unsplash.com/@jeremybishop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeremy Bishop</a> on  <a href="https://unsplash.com/photos/CGY0OWnDL_w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
+						</ul>
 					</div>
 
 			</div>
