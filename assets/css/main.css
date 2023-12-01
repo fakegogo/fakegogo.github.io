@@ -2601,7 +2601,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 30%;
+			max-width: 32%;
 		}
 
 			.image.left img, .image.right img {
@@ -3259,7 +3259,7 @@ input, select, textarea {
 			-moz-transition-delay: 0.75s;
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			transition-delay: 0.s;
 			background: #1e252d;
 			content: '';
 			display: block;
