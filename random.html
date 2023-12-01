@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research - Guangyi Zhang</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Guangyi Zhang</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="reserach.html">Research</a></li>
+							<li class="active"><a href="random.html">Random</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<!-- <ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul> -->
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+				
+									<header>
+										<h3>Non-parametric Methods to Map Stochastic Gravitational-Wave Spectrum with LISA</h3>
+
+										<p>Supervisors: Dr. Sharan Banagiri and Dr. Vicky Kalogera @ Northwestern CIERA</p>
+									</header>
+									
+									<h4>Overview</h4>
+										<p>Laser Interferometer Space Antenna (LISA) is a space-based telescope designed to study gravitational waves
+											in the millihertz frequency range<sup>1</sup>. In the this frequency band, the incoherent superposition of Double-White-Dwarfs (DWDs) results in a loud and detectable foreground, a type of the stochastic gravitational waves. Through the study of DWD spectrum, 
+											we can gain more insights into the population properties of the galactic DWDs and set tighter constraints
+											on galactic scale height. In this study, we use a non-parametric method to map
+											the power spectrum of the galactic DWD foreground. 
+											While the spectrum generally follows a power law, deviations from the behavior is possible, as a result of various astrophysical properties of galactic DWDs<sup>2</sup>.
+											<br>
+											<!-- <span style="margin-left: 30px;">Autoregressive process is a stochastic, non-parametric model with the output variable depending
+												linearly on its own previous values and on a stochastic term (Callister & Farr (2023)). Autoregressive process allows
+												statistical inference without the assumption of a particular functional form. e incorporate the autoregressive model with Bayesian LISA Inference Pipeline (BLIP), a user friendly package that
+												designs to simulate LISA data, perform the spherical harmonic analysis on the simulated data, and conduct Bayesian
+												inference to recover the simulation (Banagiri et al. (2021))</span>
+												 -->
+											</p>
+											<p>
+
+											An autoregressive process<sup>3</sup> is a 
+											non-parametric method, wherein the value of a function at a point stochastically depends on the value at previous points.  In particular, we use the first order autoregressive process which is continuous everywhere but not necessarily differentiable. 
+											In this project, we use AR process to fit the PSD of the foreground and hierarchically infer the paramters of the autoregressive process model
+											and recover galactic DWD power spectrum using Bayesian inference pipeline for LISA,  BLIP<sup>4</sup>.
+											The autoregressive process is more flexible
+											than other hyper-parametric methods like a power law model, so we can recover other high frequency structure that depends on the detectability of LISA, galactic
+											structure, and intrinsic properties of DWDs such as chirp mass distributions<sup>2</sup>. This non-parametric model is validated through a series of simulations and analyses,  
+											including the recovery of a power law spectrum and a more realistic spectrum using a galactic structure model and simulations of DWDs.
+											</p>
+											
+						
+											<div class="box">
+												<div class="row gtr-0 gtr-uniform">
+									
+												<div class="col-8"><span class="image fit"><img src="images/lisa.png" alt="" /></span></div>
+												<p style = "font-size:13px">A plot taken from the LISA L3 mission proposal<sup>5</sup> showing the expected sensitivity (green line) 
+													and galactic background (gray area) in units of dimensionless characteristic strain.
+											<div class="col-8"><span class="image fit"><img src="images/test.png"  alt="" /></span></div>
+											<p style = "font-size:13px">The orange solid curve shows the power law injection; each light blue trace shows an individual draw from the
+												posterior; the dashed blue curve marks the median of the power spectrum; and dotted blue lines denote central 90% bounds on the power
+												spectral density at each frequency bin. The results indicate a qualitative recovery of the power spectrum’s overall shape.</p>
+											
+											</div>
+											</div>	
+																			    
+
+									
+				
+
+									<h4>Acknowledgement</h4>
+									<ul>
+										<!-- <li style="font-size:12px"><a href="https://www.northwestern.edu/">Link to My Research Note </a></li> -->
+										<!-- <li style="font-size:12px"><a href="https://www.northwestern.edu/">Link to My Poster </a></li> -->
+										
+										<li style="font-size:12px">This study is carried out at <a href="https://sites.northwestern.edu/cierareu/">CIERA REU</a> at Northwestern University. </li>
+											
+										<li style="font-size:12px"> GZ is supported by Undergraduate Research Committee at Reed College under <a href="https://www.reed.edu/beyond-reed/fellowships-awards/sponsored/oppfellowship.html">SOFA.</a></li></li>
+	
+									</ul>
+									<h4>References</h4>
+									<ol>
+										<li style="font-size:12px">Amaro-Seoane, P., Audley, H., Babak, S., et al. 2017, arXiv
+											preprint arXiv:1702.00786</li>
+										<li style="font-size:12px">Georgousi, M., Karnesis, N., Korol, V., Pieroni, M., &
+											Stergioulas, N. 2023, Monthly Notices of the Royal
+											Astronomical Society, 519, 2552 </li>
+								
+										<li style="font-size:12px">Callister, T. A., & Farr, W. M. 2023, arXiv preprint
+											arXiv:2302.07289</li>
+										<li style="font-size:12px">Banagiri, S., Criswell, A., Kuan, T., et al. 2021, Monthly
+											Notices of the Royal Astronomical Society, 507, 5451</li>
+										<li style="font-size:12px"> Robson, T., Cornish, N.J. and Liu, C. 2019, Classical and Quantum Gravity, 36(10), 105011.</li>
+
+									</ol>
+
+									
+									
+									 <br>
+						
+									
+									
+							
+									
+			
+									
+							</section>
+
+
+							<section class="posts">
+								<article>
+									<header>
+										<h3>Music: Wavy Creatures 101</h3>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<p>
+									
+									</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 22, 2017</span>
+										<h2><a href="#">Primis eget<br />
+										imperdiet lorem</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 18, 2017</span>
+										<h2><a href="#">Ante mattis<br />
+										interdum dolor</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 14, 2017</span>
+										<h2><a href="#">Tempus sed<br />
+										nulla imperdiet</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 11, 2017</span>
+										<h2><a href="#">Odio magna<br />
+										sed consectetur</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 7, 2017</span>
+										<h2><a href="#">Augue lorem<br />
+										primis vestibulum</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+							</section>
+			
+
+						<!-- Post -->
+							<!-- <section class="post">
+				
+									<header>
+										<h3>Non-parametric Method to Map Stochastic Gravitational Waves with LISA</h3>
+
+										<p>Summer research at CIERA, Northwestern. <br>
+											Supervisors: Sharan Banagiri, Vicky Kalogera</p>
+									</header>
+									
+							</section> -->
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<h3>References</h3>
+							<ul>
+								<li style="font-size:12px">Example Category</li>
+								<li style="font-size:12px">Example Category</li>
+								<li style="font-size:12px">Example Category</li>
+								<li style="font-size:12px">Example Category</li>
+								<li style="font-size:12px">Example Category</li>
+							</ul>
+						</section>
+					
+					</footer> -->
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul>
+							<li>&copy; Guangyi Zhang</li>
+							<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							<li>Photo by <a href="https://unsplash.com/@jeremybishop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeremy Bishop</a> on  <a href="https://unsplash.com/photos/CGY0OWnDL_w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
